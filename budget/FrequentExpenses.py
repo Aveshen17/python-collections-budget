@@ -12,3 +12,7 @@ for expense in expenses.list
     spending_categories=[spending_categories , expense.category]
 
 print(spending_counter)
+
+top5 = spending_counter.most_common(5)
+
+zip
