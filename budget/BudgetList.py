@@ -1,3 +1,7 @@
+from . import Expense
+
+expenses = Expense.Expenses()
+expenses.read_expenses('data/spending_data.csv')
 
 
 class BudgetList:
@@ -10,9 +14,22 @@ class BudgetList:
 
     def append(self, item):
         check=self.sum_expenses+item
-        if check check<self.budget:
-            self.expenses.append(item
+        if check<self.budget:
+            self.expenses.append(item)
             self.sum_expenses+=item
 
-    def __len__(self)
-        
+    def __len__(self):
+        length = length(self.expenses)+length(self.overages)
+        return length
+
+
+def main()
+    myBudgetList = BudgetList(1200)
+
+    for expense in expenses.list:
+        myBudgetList.append(expense.amount)
+
+    print("The count of all expenses: " {str(__len__(myBudgetList))} )
+
+if __name__ == __main__:
+    main()
