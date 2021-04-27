@@ -13,14 +13,13 @@ class BudgetList:
         self.overages=[]
 
     def append(self, item):
-        check=self.sum_expenses+item
-        if check<self.budget:
+        if (self.sum_expenses+item<self.budget):
             self.expenses.append(item)
             self.sum_expenses+=item
 
     def __len__(self):
-        length = length(self.expenses)+length(self.overages)
-        return length
+        return (len(self.expenses)+len(self.overages))
+
 
 
 def main():
@@ -29,7 +28,7 @@ def main():
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
 
-    print("The count of all expenses: ",{str(__len__(myBudgetList))} )
+    print("The count of all expenses: " + {str(__len__(myBudgetList))} )
 
 if __name__ == "__main__":
     main()
