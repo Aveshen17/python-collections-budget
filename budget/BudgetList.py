@@ -23,10 +23,13 @@ class BudgetList:
         return length
 
 
-def main()
+def main():
     myBudgetList = BudgetList(1200)
 
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
 
     print("The count of all expenses: " {str(__len__(myBudgetList))} )
+
+if __name__ == __main__:
+    main()
