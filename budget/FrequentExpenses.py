@@ -20,5 +20,3 @@ fig,ax=plt.subplots()
 ax.bar(categories,count)
 ax.set_title("# of Purchases by Category")
 plt.show()
-
-test 
