@@ -1,3 +1,5 @@
+import matplotlib
+
 from . import Expense
 import matplotlib.pyplot as plt
 import timeit
